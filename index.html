@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarker</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poor+Story&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body style="background-image: url(img/pexels-rafael-cerqueira-4737484.jpg); background-size: cover; background-position: center; font-family: 'Poor Story', cursive;">
+        <header>
+            <div class="container">
+                <h1 class=" fw-bold py-3 text-white" style="font-size: 3rem;" ><i class="fa-solid fa-bookmark fa-lg me-2 text-danger"></i>Bookmarker</h1>
+            </div>
+        </header>
+        <div class="container">
+            <hr style="color: white;">
+            <div class="bg-light mx-auto text-center" style="width: 98%;">
+                <div class="content w-75 mx-auto py-4 fs-4">
+                    <h4 class="my-4 fw-bold fs-1">Bookmark your favorite sites</h4>
+                    <label for="siteName" class="my-3 fw-bold">Site Name</label>
+                    <input type="text" name="" id="siteName" class="form-control" placeholder="Site Name">
+                    <p id="noName" class="text-danger d-none">please enter name</p>
+                    <label for="siteUrl" class="my-3 fw-bold">Site URL</label>
+                    <input type="url" name="" id="siteUrl" class="form-control" placeholder="ex: www.example.com / www.example.net">
+                    <p id="notValid" class="text-danger d-none">invalid site url <br> please follow the example</p>
+                    <button class="btn btn-primary my-4 fs-5" onclick="addBookmark();">Submit</button>
+                </div>
+            </div>
+            <hr style="color: white;">
+        </div>
+        <div id="tableHead" class="container d-none fs-4">
+            <div class="w-75 mx-auto py-5">
+                <table class="table text-center text-white">
+                    <thead>
+                        <th>Website Name</th>
+                        <th>Website URL</th>
+                        <th>Visit Website</th>
+                        <th>Delete Website</th>
+                    </thead>
+                    <tbody id="tableBody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
